@@ -4,37 +4,39 @@
    <meta charset="UTF-8">
    <link href="static/form_usu.css" rel="stylesheet" type="text/css">
    <title>Formulário das Informações dos usuários</title>
+   <link rel="stylesheet" href="formIncluir.css">
 </head>
 <body>
-<p> Página formulário que terá os inserts do usuario de nome, idade ...
-    abaixo do formulário terá um botão que redirecionara para o inicio do quiz </p>
-   <h1>Formulário de inclusão de Usuários</h1>
-   <hr/>
-   <form action="/formincluir" method="post">
-       <table>
-           <tr>
-               <td>Nome:</td>
-               <td><input type="text" name="nome" size="30" maxlength="50" required/></td>
-           </tr>
-           <tr>
-               <td>Idade:</td>
-                <td><input type="number" name="idade" size="10" min="10.0" max="10000.00" step="1.00" required/></td>
-           </tr>
-           <tr>
-                <td>Unidade Federativa:</td>
-               <td><input type="text" name="uf" size="30" maxlength="50" required/></td>
-           </tr>
-           <tr>
-               <td>Observações:</td>
-               <td><textarea name="observacao"> </textarea></td>
-           </tr>
-       </table>
-       <br/>
-       <input type="submit" value="Incluir Informações"/>
-   </form>
-   <hr/>
-   <br/>
-   <a href="/"> Voltar ao Menu </a>
+    <div class="container">
+        <h1>Preencha o Formulário</h1>
+   
+        <form action="/formincluir" method="post">
+            <table class="form">
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="nome" size="30" maxlength="50" required/></td>
+                </tr>
+                <tr>
+                    <td>Idade:</td>
+                        <td><input type="number" name="idade" size="10" min="10.0" max="10000.00" step="1.00" required/></td>
+                </tr>
+                <tr>
+                        <td>Unidade Federativa:</td>
+                    <td><input type="text" name="uf" size="30" maxlength="50" required/></td>
+                </tr>
+                <tr>
+                    <td>Observações:</td>
+                    <td><textarea name="observacao"> </textarea></td>
+                </tr>
+            </table>
+            <br/>
+            <input type="submit" value="Incluir Informações"/>
+        </form>
+     
+   
+            <br/>
+            <a href="/"> Voltar ao Menu </a>
+    </div>  
 </body>
 </html>
 
