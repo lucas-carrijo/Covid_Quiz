@@ -15,14 +15,16 @@ def formIncluir():
 def incluir():
     nome = request.form['nome']
     idade = request.form['idade']
+    email = request.form['email']
+    sexo = request.form['sexo']
+    cidade = request.form['cidade']
     uf = request.form['uf']
-    observacao = request.form['observacao']
 
     #incluindo no banco
     mysql = sql.SQL("root", "test")
-    comando = "INSERT INTO tb_info_usu(nme_usu, age_usu, uf_usu, obs_usu) VALUES (%s, %s, %s, %s)"
+    comando = "INSERT INTO tb_info_usu(nme_usu, age_usu, email_usu, sexo_usu, cidade_usu, uf_usu) VALUES (%s, %s, %s, %s, %s, %s)"
 
-    mysql.executar(comando, [nome, idade, uf, observacao])
+    mysql.executar(comando, [nome, idade, email, sexo, cidade, uf])
 
     return render_template('formIncluir.html')
 
