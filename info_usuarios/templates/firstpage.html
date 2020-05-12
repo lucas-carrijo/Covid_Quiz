@@ -2,24 +2,27 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="../static/firstpage.css" rel="stylesheet" type="text/css">
+    <title>Bem-vindo ao Quiz COVID-19</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="..bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" href="../static/css/firstpage.css">
 </head>
 <body>
     <div class="title">
-        <h1>COVID QUIZ</h1>
+        <header>
+            <h1>COVID QUIZ</h1>
+        </header>
+        <section  class="w-50 p-3 mx-auto border card" >
+        <div class="p-3 mb-2 bg-info text-white">
+            <h2>
+             Bem-vindo ao COVID QUIZ, aqui você poderá testar seus conhecimentos
+             referente a pandemia do Covid-19. Clique em entrar para se cadastrar
+             e ser direcionado para a página do Quiz.
+            </h2>
+         
+        <input class="btn btn btn-secondary" type="button" value="Entrar" name="validar" onclick="window.location.replace('formIncluir.html')">    
     </div>
-    <div class="container">
-        <div class="text">
-            <p> Bem-vindo ao COVID QUIZ, aqui você poderá testar seus conhecimentos<br>
-                referente a pandemia do Covid-19. Clique em entrar para se cadastrar<br>
-                e ser direcionado para a página do Quiz.
-            </p>
-        </div>  
-
-        <div class="button">
-            <a href="formIncluir.html" class="botao">Entrar</a>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
