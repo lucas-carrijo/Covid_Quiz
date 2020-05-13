@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Quiz COVID-19</title>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <script src="..bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <script src="../static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/estilo.css">
 </head>
 
 <body>
     <header>
         <h1>Cada Questão Vale 1 Ponto</h1>
+
     </header>
     <section  class="w-50 p-3 mx-auto border card" >
         <div class="p-3 mb-2 bg-info text-white">
@@ -28,9 +29,6 @@
                     <label>Falso</label>
                 </div>
                 <hr>
-
-
-
                 <h2><p>2</p> O coronavírus mata mais do que a varíola?</h2>
                 <div>
                     <input type="radio" name="questao2" value="V">
@@ -134,10 +132,10 @@
                     <input type="radio" name="questao10" value="F">
                     <label>Falso</label>
                 </div>
-                <input class="btn btn btn-light" type="button" name="validar" value="Verificar Pontuação" onclick="resultado(this.form)">
+                <input class="btn btn btn-light" type="submit" name="validar" value="Verificar Pontuação" onclick="resultado(this.form)">
             </form>
         </div>
     </section>
-    <script src="../js/script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>

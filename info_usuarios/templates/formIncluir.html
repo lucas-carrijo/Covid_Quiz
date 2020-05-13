@@ -3,9 +3,9 @@
 <head>
    <meta charset="UTF-8">
    <link href="static/form_usu.css" rel="stylesheet" type="text/css">
-   <title>Formulário das Informações dos usuários</title>
-   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-   <script src="..bootstrap/js/bootstrap.min.js"></script>
+   <title>Formulário de Cadastro de usuários</title>
+   <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+   <script src="../static/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="../static/css/estilo.css">
    <link rel="stylesheet" href="../static/css/formIncluir.css">
 </head>
@@ -15,7 +15,7 @@
         </header>
         <section  class="w-50 p-3 mx-auto border card" >
             <div class="p-3 mb-2 bg-info text-white">
-        <form action="/formincluir" method="post">
+                <form action="/formincluir" method="post">
 
             <table class="form-row">
                 <div  class="form-group col-md-6">
@@ -24,7 +24,7 @@
                     <td><input class="form-control" type="text" name="nome" size="30" maxlength="50" required/></td>
                 </tr>
                 </div>
-                <div class="form-group col-md-">
+                <table class="form-group col-md-">
                 <tr>
                     <td>Idade:</td>
                         <td><input  type="number" name="idade" size="10" min="10.0" max="10000.00" step="1.00" required/></td>
@@ -45,11 +45,14 @@
                     <td>UF:</td>
                     <td><input  type="text" name="uf"  size="10" min="10.0" max="10000.00" step="1.00" required/></td>
                 </tr>
-            </table>  
-            <input class="btn btn btn-light" type="button" value="Incluir Informações" name="validar")> 
-        </form>
-        <input class="btn btn btn-light" id="btn-voltar" type="button" value="Voltar" name="validar" onclick="window.location.replace('firstpage.html')")> 
-        </div>
+
+                </table>
+
+                <input class="btn btn btn-light"  type="submit" value="Inserir Informações">
+                <input class="btn btn btn-light"  type="submit" value="Voltar" name="validar" onclick="window.location.replace('firstpage.html')">
+
+            </form>
+            </div>
     </section>
 </body>
 </html>
