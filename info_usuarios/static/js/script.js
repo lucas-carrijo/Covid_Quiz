@@ -46,5 +46,5 @@
 }
 
 function enviar(){
-    window.location.replace("resultado.html")
+    window.location.replace("/resultado")
 }

@@ -1,34 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-   <meta charset="UTF-8">
-   <link href="static/crud_exercicio.css" rel="stylesheet" type="text/css">
-   <title>Parâmetros de Consulta de Exercício</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <script src="../static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" href="../static/css/firstpage.css">
+    <title>Bem-vindo ao Quiz COVID-19</title>
 </head>
 <body>
-   <h1>Parâmetros de consulta de Exercício</h1>
-   <hr/>
-   <form action="/consultar" method="post">
-       <table>
-           <tr>
-               <td>Nome do Usuário:</td>
-               <td>{{ nome | safe }}</td>
-           </tr>
-           <tr>
-               <td>Faixa de Mensalidade:</td>
-               <td>
-                   <input type="number" name="ini" size="10" min="0.01" max="99999999.99" step="0.01" value="{{ idade }}" required/>
-                   <input type="sexo" name="fim" size="10" min="0.01" max="99999999.99" step="0.01" value="{{ sexo }}"required/>
-               </td>
-           </tr>
-       </table>
-       <br/>
-       <input type="submit" value="Consultar Usuário"/>
-   </form>
-   <br/>
-   <hr/>
-   <br/>
-   <a href="/"> Voltar ao Menu </a>
-</body>
-</html>
+        <header>
+            <h1>COVID QUIZ</h1>
+        </header>
+        <section  class="w-50 p-3 mx-auto border card" >
+            <div class="p-3 mb-2 bg-info text-white">
+                <h2>
+                Muito Obrigado pela contribuição, abaixo você pode conferir o gabarito e ver algumas estatísticas geradas pelas respostas do formulário
+                </h2>
 
+                <input class="btn btn btn-light"  type="submit" value="Gabarito" name="gabarito" onclick="window.location.replace('/gabarito')">
+                <input class="btn btn btn-light"  type="submit" value="Estatisticas" name="estatisticas" onclick="window.location.replace('/estatisticas')">
+
+            </div>
+        </section>
+    </body>
+</html>
