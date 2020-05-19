@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-   <link href="static/form_usu.css" rel="stylesheet" type="text/css">
-   <title>Formulário de Cadastro de usuários</title>
-   <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-   <script src="../static/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="../static/css/estilo.css">
-   <link rel="stylesheet" href="../static/css/formIncluir.css">
+    <link href="static/form_usu.css" rel="stylesheet" type="text/css">
+    <title>Formulário de Cadastro de usuários</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <script src="../static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" href="../static/css/formIncluir.css">
 
 
     <title>Quiz COVID-19</title>
@@ -17,198 +18,227 @@
     <script src="../static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/estilo.css">
 </head>
+
 <body>
-        <header>
+    <header>
         <h1>Preencha o Formulário</h1>
-        </header>
-        <section  class="w-50 p-3 mx-auto border card" >
-            <div class="p-3 mb-2 bg-info text-white">
-                <form action="/formincluir" method="post">
+    </header>
+    <section class="w-50 p-3 mx-auto border card">
+        <div class="p-3 mb-2 bg-info text-white">
+            <form action="/formincluir" method="post">
 
-            <table class="form-row">
-                <div  class="form-group col-md-6">
-                <tr>
-                    <td>Nome:</td>
-                    <td><input class="form-control" type="text" name="nome" size="30" maxlength="50" required/></td>
-                </tr>
-                </div>
+                <table class="form-row">
+                    <div class="form-group col-md-6">
+                        <tr>
+                            <td>Nome:</td>
+                            <td><input class="form-control" type="text" name="nome" size="30" maxlength="50" required />
+                            </td>
+                        </tr>
+                    </div>
 
-                <tr>
-                    <td>Idade:</td>
-                        <td><input  type="number" name="idade" size="10" min="10.0" max="10000.00" step="1.00" required/></td>
-                </tr>
-                <tr>
-                    <td>E-mail:</td>
-                    <td><input class="form-control" type="email" name="email" size="30" maxlength="50" required/></td>
-                </tr>
-                <tr>
-                <td>Sexo:</td>
-                    <td><input   type="text" name="sexo" size="10" min="10.0" max="10000.00" step="1.00" required/></td>
-                </tr>
-                <tr>
-                    <td>Cidade:</td>
-                    <td><input class="form-control" type="text" name="cidade" size="30" maxlength="50" required/></td>
-                </tr>
-                <tr>
-                    <td>UF:</td>
-                    <td><select name="uf">
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                    </select></td>
-                </tr>
+                    <tr>
+                        <td>Idade:</td>
+                        <td><input type="number" name="idade" size="10" min="10.0" max="10000.00" step="1.00"
+                                required /></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input class="form-control" type="email" name="email" size="30" maxlength="50" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td><input type="text" name="sexo" size="10" min="10.0" max="10000.00" step="1.00" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cidade:</td>
+                        <td><input class="form-control" type="text" name="cidade" size="30" maxlength="50" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UF:</td>
+                        <td><select name="uf">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select></td>
+                    </tr>
 
 
-                    <h2><p>1</p> É possível transmitir coronavírus com um aperto de mão?</h2>
-                <div>
-                    <input type="radio" name="questao1" value="V">
-                    <label>Verdadeiro</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="questao1" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
-                <h2><p>2</p> O coronavírus mata mais do que a varíola?</h2>
-                <div>
-                    <input type="radio" name="questao2" value="V">
-                    <label>Verdadeiro</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="questao2" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>1</p> É possível transmitir coronavírus com um aperto de mão?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao1" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao1" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
+                    <h2>
+                        <p>2</p> O coronavírus mata mais do que a varíola?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao2" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao2" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>3</p> Cães e gatos podem infectar os donos?</h2>
-                <div>
-                    <input type="radio" name="questao3" value="V">
-                    <label>Verdadeiro</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="questao3" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>3</p> Cães e gatos podem infectar os donos?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao3" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao3" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>4</p> O vírus consegue sobreviver por dois meses no ambiente?</h2>
-                <div>
-                    <input type="radio" name="questao4" value="V">
-                    <label>Verdadeiro</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="questao4" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>4</p> O vírus consegue sobreviver por dois meses no ambiente?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao4" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao4" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>5</p> Coronavírus é uma família de vírus que
-                    pode causar doenças em animais ou humanos.
-                    Em humanos, esses vírus provocam infecções
-                    respiratórias que podem ser desde um
-                    resfriado comum até doenças mais severas?</h2>
-               <div>
-                    <input type="radio" name="questao5" value="V">
-                    <label>Verdadeiro</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="questao5" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>5</p> Coronavírus é uma família de vírus que
+                        pode causar doenças em animais ou humanos.
+                        Em humanos, esses vírus provocam infecções
+                        respiratórias que podem ser desde um
+                        resfriado comum até doenças mais severas?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao5" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao5" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>6</p> É errado dizer que a vacina contra a gripe(influenza) protege também contra o Covid-19?</h2>
-                <div>
-                    <input type="radio" name="questao6" value="V">
-                    <label>Verdadeiro</label>
-                </div>
-                <div>
-                    <input type="radio" name="questao6" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>6</p> É errado dizer que a vacina contra a gripe(influenza) protege também contra o Covid-19?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao6" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao6" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>7</p> O confinamento é importante e ajudar na disseminação do vírus?</h2>
-                <div>
-                    <input type="radio" name="questao7" value="V">
-                    <label>Verdadeiro</label>
-                </div>
-                <div>
-                    <input type="radio" name="questao7" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>7</p> O confinamento é importante e ajudar na disseminação do vírus?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao7" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao7" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>8</p> Não é possível que o vírus se mantenha vivo em pacotes enviados por correio?</h2>
-                <div>
-                    <input type="radio" name="questao8" value="V">
-                    <label>Verdadeiro</label>
-                </div>
-                <div>
-                    <input type="radio" name="questao8" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>8</p> Não é possível que o vírus se mantenha vivo em pacotes enviados por correio?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao8" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao8" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>9</p> Um período de incubação é o tempo entre ser
-                    infectado e o início dos sintomas da doença. O
-                    intervalo pode estar entre um e 30 dias?</h2>
-                <div>
-                    <input type="radio" name="questao9" value="V">
-                    <label>Verdadeiro</label>
-                </div>
-                <div>
-                    <input type="radio" name="questao9" value="F">
-                    <label>Falso</label>
-                </div>
-                <hr>
+                    <h2>
+                        <p>9</p> Um período de incubação é o tempo entre ser
+                        infectado e o início dos sintomas da doença. O
+                        intervalo pode estar entre um e 30 dias?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao9" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao9" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <hr>
 
-                <h2><p>10</p> Pessoas jovens e bebês são os que estão mais vuneráveis ao COVID-19?</h2>
-                <div>
-                    <input type="radio" name="questao10" value="V">
-                    <label>Verdadeiro</label>
-                </div>
-                <div>
-                    <input type="radio" name="questao10" value="F">
-                    <label>Falso</label>
-                </div>
-                <input class="btn btn btn-light" type="submit" name="validar" value="Verificar Pontuação" onclick="resultado(this.form)">
+                    <h2>
+                        <p>10</p> Pessoas jovens e bebês são os que estão mais vuneráveis ao COVID-19?
+                    </h2>
+                    <div>
+                        <input type="radio" name="questao10" value="V">
+                        <label>Verdadeiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="questao10" value="F">
+                        <label>Falso</label>
+                    </div>
+                    <input class="btn btn btn-light" type="submit" name="validar" value="Verificar Pontuação"
+                        onclick="resultado(this.form)">
 
         </div>
     </section>
     <script src="../static/js/script.js"></script>
 
-                </table>
+    </table>
 
-                <input class="btn btn btn-light"  type="submit" value="Inserir Informações" onclick="window.location.replace('/resultado')">
-                <input class="btn btn btn-light"  type="submit" value="Voltar" name="validar" onclick="window.location.replace('/')">
+    <input class="btn btn btn-light" type="submit" value="Inserir Informações"
+        onclick="window.location.replace('/resultado')">
+    <input class="btn btn btn-light" type="submit" value="Voltar" name="validar" onclick="window.location.replace('/')">
 
-            </form>
-            </div>
+    </form>
+    </div>
     </section>
 </body>
+
 </html>
