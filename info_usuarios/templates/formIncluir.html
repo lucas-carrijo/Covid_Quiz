@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="static/form_usu.css" rel="stylesheet" type="text/css">
-    <title>Formulário de Cadastro de usuários</title>
+    <title>Questionário Covid-19</title>
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <script src="../static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/estilo.css">
@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <h1>Preencha o Formulário</h1>
+        <h1>Questionário Covid-19</h1>
     </header>
     <section class="w-50 p-3 mx-auto border card">
         <div class="p-3 mb-2 bg-info text-white">
@@ -59,6 +59,7 @@
                     <tr>
                         <td>UF:</td>
                         <td><select name="uf">
+                                <option value="#"></option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -223,19 +224,26 @@
                         <input type="radio" name="questao10" value="F">
                         <label>Falso</label>
                     </div>
+                    <hr>
+                     <div style="text-align:center;">
+                        <label >Preencha o Formulário e veja o gabarito e estatísticas.</label>
+                    </div>
+                    <div style="margin: 20px;">
                     <input class="btn btn btn-light" type="submit" name="validar" value="Verificar Pontuação"
                         onclick="resultado(this.form)">
-
+                    </div>
         </div>
     </section>
     <script src="../static/js/script.js"></script>
 
     </table>
-
+    <div style="margin-top: 50px;">
     <input class="btn btn btn-light" type="submit" value="Inserir Informações"
         onclick="window.location.replace('/resultado')">
+    </div>   
+    <div style="margin-left: 50px;">
     <input class="btn btn btn-light" type="submit" value="Voltar" name="validar" onclick="window.location.replace('/')">
-
+    </div>
     </form>
     </div>
     </section>
